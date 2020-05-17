@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/channel_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="24dp"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/channel_logo"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/textlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/channel_logo"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/moreinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Channel . 11 months ago"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Been playing this game since i was eight years old...and somehow i still keep on learning. \n Great Series"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="@dimen/eighteen"
+                android:layout_height="@dimen/eighteen"
+                android:src="@drawable/ic_like"
+                android:tint="@color/grey2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/eighteen"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/like"
+                android:gravity="bottom"
+                android:text="5.3K"
+                android:textColor="@color/grey2"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/dislike"
+                android:layout_width="@dimen/eighteen"
+                android:layout_height="@dimen/eighteen"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20sp"
+                android:layout_toRightOf="@id/like_count"
+                android:src="@drawable/ic_dislike"
+                android:tint="@color/grey2"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/comment"
+                android:layout_width="@dimen/eighteen"
+                android:layout_height="@dimen/eighteen"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/dislike"
+                android:src="@drawable/ic_comment"
+                android:tint="@color/grey2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/eighteen"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/comment"
+                android:text="81"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="@dimen/eighteen"
+                android:layout_height="@dimen/eighteen"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_side_menu"
+                android:tint="@color/grey2"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="81 replies"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@id/textlayout"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey2" />
+</RelativeLayout>

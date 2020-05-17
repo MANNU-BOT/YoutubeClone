@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/notification_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="."
+        android:textColor="#1A70BC"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/channel_logo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16sp"
+        android:layout_toRightOf="@id/notification_dot"
+        app:cardCornerRadius="24dp"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/channel_logo"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/side_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_side_menu"
+        android:tint="@color/grey2"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/side_menu"
+        android:src="@drawable/video_thumbnail"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/thumbnail"
+        android:layout_toRightOf="@id/channel_logo"
+        android:text="Notification title here: The is the is or to on upon under because ex apple bat cat dog mat"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/channel_logo"
+        android:text="4 hours ago"
+        android:textColor="@color/grey2"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+</RelativeLayout>
