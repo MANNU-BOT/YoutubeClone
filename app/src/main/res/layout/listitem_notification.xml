@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginTop="10dp">
 
     <TextView
@@ -62,7 +62,7 @@
         android:layout_marginRight="8dp"
         android:layout_toLeftOf="@id/thumbnail"
         android:layout_toRightOf="@id/channel_logo"
-        android:text="Notification title here: The is the is or to on upon under because ex apple bat cat dog mat"
+        android:text="@string/demo"
         android:textColor="@color/black"
         tools:ignore="HardcodedText,RtlHardcoded" />
 

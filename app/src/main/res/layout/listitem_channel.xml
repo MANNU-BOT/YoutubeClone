@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<!--TODO: All bell icon, adjust channel name size,check font-->
+    android:layout_height="wrap_content">
+    <!--TODO: All bell icon, adjust channel name size,check font-->
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PewDiePie "
+                android:text="Channel Name "
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -79,9 +79,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:text="SUBSCRIBE"
-                android:textStyle="bold"
                 android:textColor="@color/red"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </GridLayout>

@@ -22,26 +22,27 @@
         <RelativeLayout
             android:layout_width="70dp"
             android:layout_height="90dp"
-            android:background="@color/black"
-            android:alpha="0.8"
-            android:gravity="center"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true">
+            android:layout_alignParentRight="true"
+            android:alpha="0.8"
+            android:background="@color/black"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/video_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
                 android:text="74"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 tools:ignore="HardcodedText" />
+
             <ImageView
-                android:layout_below="@id/video_count"
                 android:layout_width="wrap_content"
-                android:tint="@color/white"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/video_count"
                 android:src="@drawable/ic_playlist"
+                android:tint="@color/white"
                 tools:ignore="ContentDescription" />
         </RelativeLayout>
     </RelativeLayout>

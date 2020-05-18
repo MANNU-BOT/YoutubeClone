@@ -6,16 +6,22 @@
     android:layout_height="250dp"
     android:layout_marginEnd="12dp"
     android:layout_marginRight="12dp"
-    app:cardElevation="20dp"
-    app:cardCornerRadius="8dp">
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="20dp">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha=".7"
         android:background="@drawable/story">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/black"
+            android:alpha="0.3"
+            android:scaleType="centerCrop"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,14 +31,30 @@
             tools:ignore="ContentDescription" />
     </RelativeLayout>
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/channel_logo"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="60dp"
         android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp" >
 
-        android:layout_marginBottom="40dp"
-        android:src="@drawable/channel_logo" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/circular_frame"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="30dp">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/channel_logo"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
