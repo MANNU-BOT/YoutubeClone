@@ -140,8 +140,8 @@
 
         <ImageView
             android:id="@+id/like"
-            android:layout_width="@dimen/thirty"
-            android:layout_height="@dimen/thirty"
+            android:layout_width="@dimen/twentyfour"
+            android:layout_height="@dimen/twentyfour"
             android:layout_marginLeft="12dp"
             android:src="@drawable/ic_like"
             android:tint="@color/grey2"
@@ -150,7 +150,7 @@
         <TextView
             android:id="@+id/like_count"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/thirty"
+            android:layout_height="@dimen/twentyfour"
             android:layout_marginLeft="12dp"
             android:layout_toRightOf="@id/like"
             android:gravity="bottom"
@@ -161,8 +161,8 @@
 
         <ImageView
             android:id="@+id/dislike"
-            android:layout_width="@dimen/thirty"
-            android:layout_height="@dimen/thirty"
+            android:layout_width="@dimen/twentyfour"
+            android:layout_height="@dimen/twentyfour"
             android:layout_marginLeft="12dp"
             android:layout_toRightOf="@id/like_count"
             android:src="@drawable/ic_dislike"
@@ -172,7 +172,7 @@
         <TextView
             android:id="@+id/comment_count"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/thirty"
+            android:layout_height="@dimen/twentyfour"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="12dp"
@@ -185,8 +185,8 @@
 
         <ImageView
             android:id="@+id/comment"
-            android:layout_width="@dimen/thirty"
-            android:layout_height="@dimen/thirty"
+            android:layout_width="@dimen/twentyfour"
+            android:layout_height="@dimen/twentyfour"
             android:layout_marginLeft="12dp"
             android:layout_toLeftOf="@id/comment_count"
             android:src="@drawable/ic_comment"
@@ -195,8 +195,8 @@
 
         <ImageView
             android:id="@+id/share"
-            android:layout_width="@dimen/thirty"
-            android:layout_height="@dimen/thirty"
+            android:layout_width="@dimen/twentyfour"
+            android:layout_height="@dimen/twentyfour"
             android:layout_marginRight="30dp"
             android:layout_toLeftOf="@id/comment"
             android:scaleX="-1"

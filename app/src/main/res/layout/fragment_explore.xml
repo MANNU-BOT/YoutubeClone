@@ -1,14 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Dashboard.Frag_explore">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="50dp"
+    android:layout_height="match_parent">
+    <!--tools:context=".Dashboard.Frag_explore"-->
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <GridLayout
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="true"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/fourtytwo"
+                android:layout_margin="@dimen/six"
+                app:cardCornerRadius="@dimen/six"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/explore1"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/fourtytwo"
+                android:layout_margin="@dimen/six"
+                app:cardCornerRadius="@dimen/six"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/explore2"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/fourtytwo"
+                android:layout_margin="@dimen/six"
+                app:cardCornerRadius="@dimen/six"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/explore3"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/fourtytwo"
+                android:layout_margin="@dimen/six"
+                app:cardCornerRadius="@dimen/six"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/explore4"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/fourtytwo"
+                android:layout_margin="@dimen/six"
+                app:cardCornerRadius="@dimen/six"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/explore5"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/fourtytwo"
+                android:layout_margin="@dimen/six"
+                app:cardCornerRadius="@dimen/six"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/explore6"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/fourtytwo"
+                android:layout_margin="@dimen/six"
+                app:cardCornerRadius="@dimen/six"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/explore7"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/fourtytwo"
+                android:layout_margin="@dimen/six"
+                app:cardCornerRadius="@dimen/six"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/explore8"/>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
