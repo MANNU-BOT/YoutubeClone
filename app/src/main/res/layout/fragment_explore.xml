@@ -4,14 +4,25 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingTop="50dp"
-    android:layout_height="match_parent">
-    <!--tools:context=".Dashboard.Frag_explore"-->
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.Frag_explore">
 
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:background="#EDECEC"
+            android:orientation="vertical">
         <GridLayout
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
@@ -19,7 +30,8 @@
             android:layout_height="wrap_content"
             android:columnOrderPreserved="true"
             android:columnCount="2"
-            android:rowCount="4">
+            android:rowCount="4"
+            tools:ignore="UselessParent">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="@dimen/zero"
@@ -126,6 +138,24 @@
             </androidx.cardview.widget.CardView>
 
         </GridLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Trending Videos"
+            android:layout_margin="12dp"
+            android:textColor="@color/black"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_trending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="true"
+                tools:listitem="@layout/listitem_main_page_video"/>
+
+        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

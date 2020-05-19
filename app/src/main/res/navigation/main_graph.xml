@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main_graph">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/frag_explore">
+    <fragment
+        android:id="@+id/frag_explore"
+        android:name="tech.dsckiet.youtubeclone.Dashboard.Frag_explore"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
+    <fragment
+        android:id="@+id/frag_Inbox"
+        android:name="tech.dsckiet.youtubeclone.Dashboard.Frag_Inbox"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/frag_subscriptions"
+        android:name="tech.dsckiet.youtubeclone.Dashboard.Frag_subscriptions"
+        android:label="fragment_subscriptions"
+        tools:layout="@layout/fragment_subscriptions" />
+    <fragment
+        android:id="@+id/frag_Library"
+        android:name="tech.dsckiet.youtubeclone.Dashboard.Frag_Library"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" />
+    <fragment
+        android:id="@+id/frag_Home"
+        android:name="tech.dsckiet.youtubeclone.Dashboard.Frag_Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>
