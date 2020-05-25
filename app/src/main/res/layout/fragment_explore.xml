@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingTop="50dp"
     android:layout_height="match_parent"
+    android:paddingTop="50dp"
     tools:context=".Dashboard.Frag_explore">
 
 
@@ -17,144 +17,153 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:background="#EDECEC"
-            android:orientation="vertical">
-        <GridLayout
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnOrderPreserved="true"
-            android:columnCount="2"
-            android:rowCount="4"
-            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDECEC"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/fourtytwo"
-                android:layout_margin="@dimen/six"
-                app:cardCornerRadius="@dimen/six"
-                android:layout_columnWeight="1">
-                <ImageView
+                <GridLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/explore1"/>
-            </androidx.cardview.widget.CardView>
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="true"
+                    android:rowCount="4"
+                    tools:ignore="UselessParent">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/fourtytwo"
-                android:layout_margin="@dimen/six"
-                app:cardCornerRadius="@dimen/six"
-                android:layout_columnWeight="1">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/explore2"/>
-            </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/fourtytwo"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/six"
+                        app:cardCornerRadius="@dimen/six">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/fourtytwo"
-                android:layout_margin="@dimen/six"
-                app:cardCornerRadius="@dimen/six"
-                android:layout_columnWeight="1">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/explore3"/>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/explore1" />
+                    </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/fourtytwo"
-                android:layout_margin="@dimen/six"
-                app:cardCornerRadius="@dimen/six"
-                android:layout_columnWeight="1">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/explore4"/>
-            </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/fourtytwo"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/six"
+                        app:cardCornerRadius="@dimen/six">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/fourtytwo"
-                android:layout_margin="@dimen/six"
-                app:cardCornerRadius="@dimen/six"
-                android:layout_columnWeight="1">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/explore5"/>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/explore2" />
+                    </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/fourtytwo"
-                android:layout_margin="@dimen/six"
-                app:cardCornerRadius="@dimen/six"
-                android:layout_columnWeight="1">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/explore6"/>
-            </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/fourtytwo"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/six"
+                        app:cardCornerRadius="@dimen/six">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/fourtytwo"
-                android:layout_margin="@dimen/six"
-                app:cardCornerRadius="@dimen/six"
-                android:layout_columnWeight="1">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/explore7"/>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/explore3" />
+                    </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/fourtytwo"
-                android:layout_margin="@dimen/six"
-                app:cardCornerRadius="@dimen/six"
-                android:layout_columnWeight="1">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/explore8"/>
-            </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/fourtytwo"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/six"
+                        app:cardCornerRadius="@dimen/six">
 
-        </GridLayout>
-        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/explore4" />
+                    </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="Trending Videos"
-            android:layout_margin="12dp"
-            android:textColor="@color/black"
-            tools:ignore="HardcodedText" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/fourtytwo"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/six"
+                        app:cardCornerRadius="@dimen/six">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/explore5" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/fourtytwo"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/six"
+                        app:cardCornerRadius="@dimen/six">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/explore6" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/fourtytwo"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/six"
+                        app:cardCornerRadius="@dimen/six">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/explore7" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/fourtytwo"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/six"
+                        app:cardCornerRadius="@dimen/six">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/explore8" />
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="Trending Videos"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rec_trending"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clipToPadding="true"
-                tools:listitem="@layout/listitem_main_page_video"/>
+                tools:listitem="@layout/listitem_main_page_video" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

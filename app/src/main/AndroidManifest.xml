@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash"></activity>
+        <activity android:name=".Playlist" />
+        <activity android:name=".VideoPlayer.Video" />
+        <activity android:name=".Explore.Fashion" />
+        <activity android:name=".Explore.Music_Sections.Music" />
+        <activity android:name=".Explore.Withme.Withme" />
+        <activity android:name=".Explore.News_Sections.News" />
+        <activity android:name=".Explore.Trending_Sections.Trending" />
+        <activity android:name=".Explore.Learning_Sections.Learning" />
+        <activity android:name=".Explore.Gaming" />
+        <activity android:name=".Explore.Movies_Sections.Movies" />
+        <activity android:name=".Channel.Channel" />
+        <activity android:name=".Splash" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

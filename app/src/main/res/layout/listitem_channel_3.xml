@@ -24,12 +24,12 @@
     </RelativeLayout>
 
     <TextView
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal|bottom"
         android:text="WadZee"
-        android:gravity="center_horizontal|bottom"/>
+        android:textSize="12sp" />
 
 
     <RelativeLayout

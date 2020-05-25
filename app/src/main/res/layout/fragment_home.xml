@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clipToPadding="true"
-            tools:listitem="@layout/listitem_main_page_video"/>
+            tools:listitem="@layout/listitem_main_page_video" />
     </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

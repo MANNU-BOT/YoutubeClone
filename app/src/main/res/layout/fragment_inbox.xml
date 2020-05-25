@@ -50,23 +50,23 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:id="@+id/seperator"
-                android:layout_marginTop="8dp"
-                android:layout_below="@id/tags"
                 android:layout_width="match_parent"
                 android:layout_height="0.2dp"
-                android:background="@color/grey1"/>
+                android:layout_below="@id/tags"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey1"
+                android:orientation="horizontal" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_marginTop="16dp"
-                android:layout_below="@id/seperator"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:listitem="@layout/listitem_notification"
-                android:clipToPadding="true"/>
+                android:layout_below="@id/seperator"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="2dp"
+                android:clipToPadding="true"
+                tools:listitem="@layout/listitem_notification" />
 
 
         </RelativeLayout>

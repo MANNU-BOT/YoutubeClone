@@ -12,20 +12,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@drawable/tab_color"
         app:itemTextAppearanceActive="@style/BottomNavigationText"
         app:itemTextAppearanceInactive="@style/BottomNavigationText"
-        android:fitsSystemWindows="true"
-        app:labelVisibilityMode="labeled"
-        app:itemIconTint="@drawable/tab_color"
         app:itemTextColor="@drawable/tab_color"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_bottom_nav" />
 
     <fragment
         android:id="@+id/fragment_dashboard"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="60dp"
-        android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
         app:navGraph="@navigation/main_graph" />
 
