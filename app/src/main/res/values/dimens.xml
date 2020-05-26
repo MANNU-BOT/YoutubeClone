@@ -6,4 +6,7 @@
     <dimen name="zero">0dp</dimen>
     <dimen name="four">4dp</dimen>
     <dimen name="six">6dp</dimen>
+    <dimen name="fourtyEight">48dp</dimen>
+    <dimen name="twentyFour">24dp</dimen>
+    <dimen name="twenty">20dp</dimen>
 </resources>

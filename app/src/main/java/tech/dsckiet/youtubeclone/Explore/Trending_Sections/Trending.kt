@@ -2,6 +2,7 @@ package tech.dsckiet.youtubeclone.Explore.Trending_Sections
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import tech.dsckiet.youtubeclone.R
 
 class Trending : AppCompatActivity() {
 

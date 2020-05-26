@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subscription_array">
+        <item>Videos and posts</item>
+        <item>Videos only</item>
+    </string-array>
+
+    <string-array name="library_playlist_array">
+        <item>Recently added</item>
+        <item>A-Z</item>
+    </string-array>
+</resources>

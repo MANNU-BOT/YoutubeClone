@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="50dp"
     tools:context=".Dashboard.Frag_Home">
 
     <androidx.core.widget.NestedScrollView
@@ -11,6 +10,7 @@
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="50dp"
             android:id="@+id/rec_trending"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
